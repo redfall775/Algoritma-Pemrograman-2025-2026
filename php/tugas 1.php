@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-  string nama = "BAyu";
+  string nama = "Rizki";
   int umur = 18;
   float tinggi = 170,5
   Bool aktif = true;
