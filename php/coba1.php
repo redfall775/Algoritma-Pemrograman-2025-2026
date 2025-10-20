@@ -1,7 +1,7 @@
 <?php
-$nim = "I.110186";
+$nim = "I.2510276";
 $nama = 'Muhammad Rizki';
-$umur = 35;
+$umur = 18;
 $nilai = 92.75;
 $status = TRUE;
 echo "NIM : " . $nim . "<br>";
