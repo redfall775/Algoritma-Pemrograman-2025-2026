@@ -1,4 +1,3 @@
-import konstanta
-
-print(konstanta.PI)
-print(konstanta.GRAVITASI)
+import konstanta 
+print(konstanta.PI) 
+print(konstanta.GRAFITASI)
