@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class NimProcess {
+public class array {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

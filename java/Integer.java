@@ -9,3 +9,7 @@ public class Integer {
   System.out.println("Nilai tipe data short = " + value_short); 
   System.out.println("Nilai tipe data int = " + value_int); 
   System.out.println("Nilai tipe data long = " + value_long);
+ 
+}
+
+}

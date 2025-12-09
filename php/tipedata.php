@@ -1,6 +1,6 @@
 <?php 
 $nim = 'A'; 
-$nama = "Muhammad Encep"; 
+$nama = "M Rizki Abdullah"; 
 $umur = 36; 
 $nilai = 82.25; 
 $status = TRUE; 

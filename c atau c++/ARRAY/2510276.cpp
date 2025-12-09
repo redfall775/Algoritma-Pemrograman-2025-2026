@@ -4,55 +4,45 @@ using namespace std;
 
 int main() {
     string nim;
-    cout << "masukan nim: ";
+    cout << "Masukkan NIM: ";
     cin >> nim;
 
+    // Ubah tiap karakter jadi digit
     vector<int> digit;
     for (char c : nim) {
         digit.push_back(c - '0');
     }
 
-    // total
+    // Hitung total
     int total = 0;
     for (int d : digit) total += d;
 
-    // max
+    // Cari maks & min
     int maks = digit[0];
-    for (int d : digit)
+    int mins = digit[0];
+    for (int d : digit) {
         if (d > maks) maks = d;
-
-    // min
-    int minim = digit[0];
-    for (int d : digit)
-        if (d < minim) minim = d;
-
-    // rata
-    double rata = (double) total / digit.size();
-
-    // reverse
-    vector<int> rev;
-    for (int i = digit.size() - 1; i >= 0; i--) {
-        rev.push_back(digit[i]);
+        if (d < mins) mins = d;
     }
 
-    cout << "digit        : [";
-    for (int i = 0; i < digit.size(); i++) {
-        cout << digit[i];
-        if (i < digit.size() - 1) cout << ", ";
-    }
-    cout << "]\n";
+    // Rata-rata
+    float rata = (float)total / digit.size();
 
-    cout << "total        = " << total << endl;
-    cout << "maksimum     = " << maks << endl;
-    cout << "minimum      = " << minim << endl;
-    cout << "rata rata    = " << rata << endl;
+    // Tampilkan
+    cout << "Array digit: ";
+    for (int d : digit) cout << d << " ";
+    cout << endl;
 
-    cout << "reverse array: [";
-    for (int i = 0; i < rev.size(); i++) {
-        cout << rev[i];
-        if (i < rev.size() - 1) cout << ", ";
-    }
-    cout << "]\n";
+    cout << "Total digit = " << total << endl;
+    cout << "Digit maksimum = " << maks << endl;
+    cout << "Digit minimum = " << mins << endl;
+    cout << "Rata-rata = " << rata << endl;
+
+    // Reverse array
+    cout << "Reverse array: ";
+    for (int i = digit.size()-1; i >= 0; i--)
+        cout << digit[i] << " ";
+    cout << endl;
 
     return 0;
 }
